@@ -1,0 +1,12 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\赖炫池\Desktop\ai-coding-assistant\.npmrc
+5 silly config load:file:C:\Users\赖炫池\.npmrc
+6 silly config load:file:C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\etc\npmrc
+7 verbose title npm run dev
+8 verbose argv "run" "dev"
+9 verbose logfile logs-max:10 dir:C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-12T14_30_27_354Z-
+10 verbose logfile C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-12T14_30_27_354Z-debug-0.log
+11 silly logfile done cleaning log files
