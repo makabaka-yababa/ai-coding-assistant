@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function IconLogo() {
   return (
@@ -70,6 +71,7 @@ const features = [
     desc: '用自然语言描述需求，即时获得可运行、带注释的实现方案，支持多种语言与框架。',
     icon: IconSparkles,
     iconMod: 'feature-card__icon--cyan',
+    route: '/generate',
   },
   {
     id: 'explain',
@@ -77,6 +79,7 @@ const features = [
     desc: '逐行拆解复杂逻辑，梳理调用关系与数据流，让接手与评审都更轻松。',
     icon: IconBook,
     iconMod: 'feature-card__icon--violet',
+    route: '/explain',
   },
   {
     id: 'fix',
@@ -84,6 +87,7 @@ const features = [
     desc: '粘贴报错与上下文，定位根因并给出补丁与回归建议，减少来回试错时间。',
     icon: IconBug,
     iconMod: 'feature-card__icon--rose',
+    route: '/debug',
   },
 ]
 
@@ -168,12 +172,12 @@ export default function App() {
             CodePilot 将生成、解释与排错串联在同一工作流里，让你专注架构与业务，把重复劳动交给 AI。
           </p>
           <div className="hero__cta-row">
-            <a className="hero__btn hero__btn--primary" href="#features">
+            <Link className="hero__btn hero__btn--primary" to="/chat">
               探索功能
-            </a>
-            <a className="hero__btn hero__btn--ghost" href="#footer">
+            </Link>
+            <Link className="hero__btn hero__btn--ghost" to="/docs">
               查看文档
-            </a>
+            </Link>
           </div>
           <div className="hero__stats">
             <div className="hero__stat">
@@ -208,12 +212,12 @@ export default function App() {
                   </div>
                   <h3 className="feature-card__title">{f.title}</h3>
                   <p className="feature-card__text">{f.desc}</p>
-                  <span className="feature-card__link">
+                  <Link className="feature-card__link" to={f.route}>
                     了解更多
                     <span className="feature-card__arrow" aria-hidden>
                       →
                     </span>
-                  </span>
+                  </Link>
                 </article>
               )
             })}
