@@ -7,7 +7,7 @@
 6 silly config load:file:C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\etc\npmrc
 7 verbose title npm run dev
 8 verbose argv "run" "dev"
-9 verbose logfile logs-max:10 dir:C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-14T07_44_31_421Z-
-10 verbose logfile C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-14T07_44_31_421Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-16T11_35_41_528Z-
+10 verbose logfile C:\Users\赖炫池\Desktop\ai-coding-assistant\刚才创建的node_global文件夹的路径\_logs\2026-04-16T11_35_41_528Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files

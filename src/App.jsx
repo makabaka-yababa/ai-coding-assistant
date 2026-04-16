@@ -1,5 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Routes, Route } from 'react-router-dom'
+import ChatPage from './pages/ChatPage'
+import DocsPage from './pages/DocsPage'
+import CodeGeneratePage from './pages/CodeGeneratePage'
+import CodeExplainPage from './pages/CodeExplainPage'
+import BugFixPage from './pages/BugFixPage'
 
 function IconLogo() {
   return (
@@ -91,7 +96,7 @@ const features = [
   },
 ]
 
-export default function App() {
+function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const closeMenu = () => setMenuOpen(false)
@@ -284,5 +289,18 @@ export default function App() {
         </div>
       </footer>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/chat" element={<ChatPage />} />
+      <Route path="/docs" element={<DocsPage />} />
+      <Route path="/generate" element={<CodeGeneratePage />} />
+      <Route path="/explain" element={<CodeExplainPage />} />
+      <Route path="/debug" element={<BugFixPage />} />
+    </Routes>
   )
 }
