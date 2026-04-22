@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './chat.css'
 
-const DIFY_PROXY_URL = 'http://localhost:3001/api/chat'
+const DIFY_PROXY_URL = '/api/chat'
 const CHAT_CONVERSATION_KEY = 'codepilot_chat_conversation_id'
 
 // 🔥 自动清洗 #、-、*、多余空行

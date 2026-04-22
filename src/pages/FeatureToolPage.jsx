@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './feature-tool.css'
 
-const DIFY_PROXY_URL = 'http://localhost:3001/api/chat'
+const DIFY_PROXY_URL = '/api/chat'
 
 function cleanMarkdownText(text) {
   return text
